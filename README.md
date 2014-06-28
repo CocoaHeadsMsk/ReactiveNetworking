@@ -16,5 +16,6 @@ Reactive networking for Swift
 
 Реактивность и функциональность на Swift
 
-1. https://github.com/thomvis/brightfutures
-2. https://github.com/mxcl/promisekit
+1. https://github.com/jspahrsummers/RxSwift
+2. https://github.com/thomvis/brightfutures
+3. https://github.com/mxcl/promisekit
