@@ -12,6 +12,7 @@
 		903C4E5C195ED8EB00DF2193 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903C4E5B195ED8EB00DF2193 /* Images.xcassets */; };
 		903C4E5F195ED8EB00DF2193 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903C4E5D195ED8EB00DF2193 /* MainMenu.xib */; };
 		903C4E6B195ED8EB00DF2193 /* ReactiveNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C4E6A195ED8EB00DF2193 /* ReactiveNetworkingTests.swift */; };
+		903C4E77195EDA2300DF2193 /* ReactiveHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C4E76195EDA2300DF2193 /* ReactiveHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		903C4E64195ED8EB00DF2193 /* ReactiveNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		903C4E69195ED8EB00DF2193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		903C4E6A195ED8EB00DF2193 /* ReactiveNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveNetworkingTests.swift; sourceTree = "<group>"; };
+		903C4E76195EDA2300DF2193 /* ReactiveHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +77,9 @@
 		903C4E54195ED8EA00DF2193 /* ReactiveNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				903C4E74195ED9D100DF2193 /* Core */,
+				903C4E75195ED9DC00DF2193 /* Demo */,
 				903C4E59195ED8EA00DF2193 /* AppDelegate.swift */,
-				903C4E5B195ED8EB00DF2193 /* Images.xcassets */,
-				903C4E5D195ED8EB00DF2193 /* MainMenu.xib */,
-				903C4E55195ED8EA00DF2193 /* Supporting Files */,
 			);
 			path = ReactiveNetworking;
 			sourceTree = "<group>";
@@ -107,6 +108,24 @@
 				903C4E69195ED8EB00DF2193 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		903C4E74195ED9D100DF2193 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				903C4E76195EDA2300DF2193 /* ReactiveHTTPClient.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		903C4E75195ED9DC00DF2193 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				903C4E5B195ED8EB00DF2193 /* Images.xcassets */,
+				903C4E5D195ED8EB00DF2193 /* MainMenu.xib */,
+				903C4E55195ED8EA00DF2193 /* Supporting Files */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				903C4E77195EDA2300DF2193 /* ReactiveHTTPClient.swift in Sources */,
 				903C4E5A195ED8EA00DF2193 /* AppDelegate.swift in Sources */,
 				903C4E58195ED8EA00DF2193 /* main.swift in Sources */,
 			);
@@ -399,6 +419,7 @@
 				903C4E70195ED8EB00DF2193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		903C4E71195ED8EB00DF2193 /* Build configuration list for PBXNativeTarget "ReactiveNetworkingTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +428,7 @@
 				903C4E73195ED8EB00DF2193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

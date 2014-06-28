@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+//import ReactiveHTTPClient
 
 class AppDelegate: NSObject, NSApplicationDelegate {
                             
@@ -14,13 +15,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
-        // Insert code here to initialize your application
+        var client = ReactiveHTTPClient()
+        
+        let url = NSURL.URLWithString("http://google.com")
+        
+        client.GET(url, parameters: ["param1": "val1"], success: {(response: AnyObject?) -> Void in
+                println(response)
+            }, failure: nil)
     }
 
     func applicationWillTerminate(aNotification: NSNotification?) {
         // Insert code here to tear down your application
     }
-
-
 }
-
