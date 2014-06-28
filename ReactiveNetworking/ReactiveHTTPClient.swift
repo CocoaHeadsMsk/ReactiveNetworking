@@ -9,14 +9,14 @@
 import Foundation
 
 class ReactiveHTTPClient {
-    func GET(URL: NSURL, parameters: Dictionary<String, String>, success: ((AnyObject?) -> Void)?, failure: ((AnyObject?) -> Void)?) -> Void {
+    func GET(URL: NSURL, parameters: Dictionary<String, String>, success: ((NSURLResponse, NSData) -> Void)?, failure: ((NSError) -> Void)?) -> Void {
         let session = NSURLSession.sharedSession()
         
-        var task: NSURLSessionDataTask = session.dataTaskWithHTTPGetRequest(URL, completionHandler: {data, response, error in
+        var task: NSURLSessionDataTask = session.dataTaskWithURL(URL, completionHandler: {data, response, error in
             if let realError = error {
                 failure?(realError)
             } else {
-                success?(response)
+                success?(response, data)
             }
         })
         

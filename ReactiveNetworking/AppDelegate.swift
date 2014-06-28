@@ -19,8 +19,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let url = NSURL.URLWithString("http://google.com")
         
-        client.GET(url, parameters: ["param1": "val1"], success: {(response: AnyObject?) -> Void in
-                println(response)
+        client.GET(url, parameters: ["param1": "val1"], success: {response, data in
+                println(data)
             }, failure: nil)
     }
 
